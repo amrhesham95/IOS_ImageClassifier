@@ -7,4 +7,4 @@ This app is an image classifier that could distinguish between cats and dogs pic
 * Preparing data for Turi Create
 * Creating a machine learning model with Turi Create
 * Implementing an image picker controller
-*Using Core ML and the Vision framework for image classification
+* Using Core ML and the Vision framework for image classification
