@@ -12,6 +12,7 @@
 		528CE766200F9CEB00DB8826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CE764200F9CEB00DB8826 /* Main.storyboard */; };
 		528CE768200F9CEB00DB8826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528CE767200F9CEB00DB8826 /* Assets.xcassets */; };
 		528CE76B200F9CEB00DB8826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CE769200F9CEB00DB8826 /* LaunchScreen.storyboard */; };
+		EFAB6CDF248ECA1E0022FDB2 /* CatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFAB6CDE248ECA1D0022FDB2 /* CatDogClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		528CE767200F9CEB00DB8826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528CE76A200F9CEB00DB8826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528CE76C200F9CEB00DB8826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAB6CDE248ECA1D0022FDB2 /* CatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatDogClassifier.mlmodel; path = ../../CatDogClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		528CE75F200F9CEB00DB8826 /* DogsVsCats */ = {
 			isa = PBXGroup;
 			children = (
+				EFAB6CDE248ECA1D0022FDB2 /* CatDogClassifier.mlmodel */,
 				528CE760200F9CEB00DB8826 /* AppDelegate.swift */,
 				528CE762200F9CEB00DB8826 /* ViewController.swift */,
 				528CE764200F9CEB00DB8826 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				528CE763200F9CEB00DB8826 /* ViewController.swift in Sources */,
+				EFAB6CDF248ECA1E0022FDB2 /* CatDogClassifier.mlmodel in Sources */,
 				528CE761200F9CEB00DB8826 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
