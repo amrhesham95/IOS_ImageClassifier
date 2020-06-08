@@ -23,7 +23,19 @@ class ViewController: UIViewController {
 
     
     @IBAction func selectImageSource(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
         
+        let imageSourceActions = UIAlertController(title: "Image Source", message: "Choose an image to continue", preferredStyle: .actionSheet)
+        
+        imageSourceActions.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action) in
+            imagePicker.sourceType = .photoLibrary
+            self.present(imagePicker,animated: true)
+        }))
+        
+        imageSourceActions.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        self.present(imageSourceActions,animated: true)
     }
     
     @IBAction func checkAnimal(_ sender: Any) {
@@ -37,4 +49,24 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController : UIImagePickerControllerDelegate,UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        else{
+            print("We could not load the image")
+            picker.dismiss(animated: true)
+            return
+        }
+        
+        imageView.image = selectedImage
+        imageView.contentMode = .scaleAspectFill
+        checkAnimalButton.isEnabled = true
+        picker.dismiss(animated: true)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
 }
