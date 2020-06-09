@@ -12,6 +12,7 @@
 		528CE766200F9CEB00DB8826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CE764200F9CEB00DB8826 /* Main.storyboard */; };
 		528CE768200F9CEB00DB8826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 528CE767200F9CEB00DB8826 /* Assets.xcassets */; };
 		528CE76B200F9CEB00DB8826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 528CE769200F9CEB00DB8826 /* LaunchScreen.storyboard */; };
+		EF60D30124900AF0003BCF99 /* AnimalDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF60D30024900AF0003BCF99 /* AnimalDetector.swift */; };
 		EFAB6CDF248ECA1E0022FDB2 /* CatDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFAB6CDE248ECA1D0022FDB2 /* CatDogClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		528CE767200F9CEB00DB8826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		528CE76A200F9CEB00DB8826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		528CE76C200F9CEB00DB8826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF60D30024900AF0003BCF99 /* AnimalDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetector.swift; sourceTree = "<group>"; };
 		EFAB6CDE248ECA1D0022FDB2 /* CatDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = CatDogClassifier.mlmodel; path = ../../CatDogClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				528CE762200F9CEB00DB8826 /* ViewController.swift */,
 				528CE764200F9CEB00DB8826 /* Main.storyboard */,
 				528CE767200F9CEB00DB8826 /* Assets.xcassets */,
+				EF60D30024900AF0003BCF99 /* AnimalDetector.swift */,
 				528CE769200F9CEB00DB8826 /* LaunchScreen.storyboard */,
 				528CE76C200F9CEB00DB8826 /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 				528CE763200F9CEB00DB8826 /* ViewController.swift in Sources */,
 				EFAB6CDF248ECA1E0022FDB2 /* CatDogClassifier.mlmodel in Sources */,
 				528CE761200F9CEB00DB8826 /* AppDelegate.swift in Sources */,
+				EF60D30124900AF0003BCF99 /* AnimalDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

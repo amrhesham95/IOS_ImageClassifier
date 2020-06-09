@@ -39,7 +39,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func checkAnimal(_ sender: Any) {
-  
+        AnimalDetector.startAnimalDetection(imageView) { (results) in
+            guard let animalReturned = results.first else{print("could not detect animal");return}
+            
+            DispatchQueue.main.async {
+                self.classificationLabel.text = "it's a \(animalReturned)"
+            }
+        }
     }
     
     
