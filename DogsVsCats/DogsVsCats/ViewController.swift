@@ -33,6 +33,11 @@ class ViewController: UIViewController {
             self.present(imagePicker,animated: true)
         }))
         
+        imageSourceActions.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+            imagePicker.sourceType = .camera
+            self.present(imagePicker,animated: true)
+        }))
+        
         imageSourceActions.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         
         self.present(imageSourceActions,animated: true)
